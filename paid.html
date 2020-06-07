@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+    <head>
+        <title>Paid-Courses</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://artsofsati.com/uploads/favicon.png" sizes="any" type="image/png">
+<!-------------------------------------Start Meta tag--------------------------------------------------->         
+    <meta name="csrf-token" content="jA4RodP8DFydQjDhckuv74qQsR1kqfMMRGDxVI0R">
+
+    <meta name="keywords" content="">
+    <meta name="name" content="Arts Of Sati Academy">
+    <meta name="author" content="sati alsharai">
+    <meta property="og:site_name" content="Arts Of Sati Academy" />
+    <meta property="og:image" content="https://artsofsati.com/uploads/social.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta name="description" content="">
+<!-------------------------------------Start styling--------------------------------------------------->         
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.0/dist/sweetalert2.min.css">-->
+        <link rel="stylesheet" href="css/bootstrap-rtl.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+<!-------------------------------------Start NavBar---------------------------------------------------> 
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<a class="text-left" href="#"><img style="width: 50px;" src="https://artsofsati.com/images/logo.png" alt=""></a>             
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">      
+      <li class="nav-item">
+        <a class="nav-link" href="index3.html"><i class="fa fa-home"></i> <span>الرئيسية</span></a>
+      </li> 
+        
+    </ul>
+    <ul class="navbar-nav">
+        
+              <li class="nav-item">
+        <a class="nav-link" href="sign-in.html"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                                <span>تسجيل دخول</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sign-up.html"><i class="fa fa-user-plus"></i>
+                                <span>تسجيل حساب جديد</span></a>
+      </li>       
+    </ul>
+  </div>
+</nav>
+  <div class="paid">      
+<div class="container">
+<div class="row">
+	<aside class="col-lg-9 col-md-6 col-sm-6">
+<article class="card">
+<div class="card-body p-5">
+
+<ul class="nav bg-light nav-pills rounded nav-fill mb-3" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="pill" href="#nav-tab-card">
+		<i class="fa fa-credit-card"></i>البطاقه الاتمانيه</a></li>
+<!--
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-paypal">
+		<i class="fab fa-paypal"></i>  Paypal</a></li>
+-->
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="pill" href="#nav-tab-bank">
+		<i class="fa fa-university"></i>تحويله بنكيه</a></li>
+</ul>
+
+<div class="tab-content">
+<div class="tab-pane fade show active" id="nav-tab-card">
+<!--	<p class="alert alert-success">Some text success or error</p>-->
+	<form role="form" action="" method="get">
+	<div class="form-group">
+		<label for="username">الاسم بالكامل (على البطاقه) </label>
+		<input type="text" class="form-control" name="username" placeholder="" required>
+	</div> <!-- form-group.// -->
+
+	<div class="form-group">
+		<label for="cardNumber">رقم البطاقه</label>
+		<div class="input-group">
+			<input type="text" class="form-control" name="cardNumber" placeholder="" required>
+			<div class="input-group-append">
+				<span class="input-group-text text-muted">
+					<i class="fab fa-cc-visa"></i>   <i class="fab fa-cc-amex"></i>   
+					<i class="fab fa-cc-mastercard"></i> 
+				</span>
+			</div>
+		</div>
+	</div> <!-- form-group.// -->
+
+	<div class="row">
+	    <div class="col-sm-8">
+	        <div class="form-group" >
+	            <label><span class="hidden-xs">انتهاء الصلاحيه</span> </label>
+	        	<div class="input-group">
+	        		<input type="number" class="form-control" placeholder="10" name="" required>
+		            <input type="number" class="form-control" placeholder="2018" name="" required>
+	        	</div>
+	        </div>
+	    </div>
+	    <div class="col-sm-4">
+	        <div class="form-group">
+	            <label data-toggle="tooltip" title="" data-original-title="3 digits code on back side of the card">رقم التحقق <i class="fa fa-question-circle"></i></label>
+	            <input type="number" class="form-control" required>
+	        </div> <!-- form-group.// -->
+	    </div>
+	</div> <!-- row.// -->
+	<button class="subscribe btn btn-primary btn-block" type="button"> تأكيد </button>
+	</form>
+</div> <!-- tab-pane.// -->
+<!--
+<div class="tab-pane fade" id="nav-tab-paypal">
+<p>Paypal is easiest way to pay online</p>
+<p>
+<button type="button" class="btn btn-primary"> <i class="fab fa-paypal"></i> Log in my Paypal </button>
+</p>
+<p><strong>Note:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. </p>
+</div>
+-->
+<div class="tab-pane fade" id="nav-tab-bank">
+<p>تفاصيل الحساب البنكى</p>
+<dl class="param">
+  <dt>البنك: </dt>
+  <dd> THE WORLD BANK</dd>
+</dl>
+<dl class="param">
+  <dt>رقم الحساب: </dt>
+  <dd> 12345678912345</dd>
+</dl>
+<dl class="param">
+  <dt>رقم الحساب البنكى الدولى: </dt>
+  <dd> 123456789</dd>
+</dl>
+        <div class="file">
+							
+							<input  type="file" name="file"/>
+						</div>    
+<button class="subscribe btn btn-primary btn-block" type="button"> ارسال ايصال الحواله</button>
+</div> <!-- tab-pane.// -->
+</div> <!-- tab-content .// -->
+
+</div> <!-- card-body.// -->
+</article> <!-- card.// -->
+
+
+	</aside><!-- col.// -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="panel panel-primary">
+                
+                <div class="panel-heading">
+                <i class="fa fa-info-circle"></i>
+                    <span>معلومات عن الدورة</span>
+                </div>
+
+                <div class="panel-body">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <table class="table table-striped table-responsive">
+                                <tr>
+                                    <td>المشتركين حتي اﻻن</td>
+                                    <td><b>769 مشترك</b></td>
+                                </tr>
+                                <tr>
+                                    <td>عدد الدروس</td>
+                                    <td><b>10</b></td>
+                                </tr>
+                                <tr>
+                                    <td>عدد الفيديوهات</td>
+                                    <td><b>24</b></td>
+                                </tr>
+                                <tr>
+                                    <td>مدة الدورة</td>
+                                    <td><b>35 يوم</b></td>
+                                </tr>
+                                <tr>
+                                    <td>سعر الدورة</td>
+                                    <td><b>$95.00</b></td>
+                                </tr>
+                            </table>
+<br>
+    <button class="btn btn-info btn-sm favorite ">
+        <i class="fa fa-star"></i>
+        <i id="spinner-favorite" class="spinner-favorite fa fa-spinner fa-spin hidden"></i>
+        <span> اضف للمفضلة</span>
+    </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>     
+</div> <!-- row.// -->
+
+</div>
+        </div>
+<!--container end.//-->  
+    </body>
+<!-------------------------------------Start JavaScript Library--------------------------------------------------->     
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.rtlcss.com/bootstrap/v4.0.0/js/bootstrap.min.js"
+  integrity="sha384-54+cucJ4QbVb99v8dcttx/0JRx4FHMmhOWi4W+xrXpKcsKQodCBwAvu3xxkZAwsH"
+  crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.0/dist/sweetalert2.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button.subscribe.btn.btn-primary.btn-block").click(function(){
+            swal({
+             
+              type: 'success',
+              title: 'تم التسجيل بنجاح',
+              showConfirmButton: false,
+              timer: 2000
+            })
+    });
+});
+</script>    
+</html>
